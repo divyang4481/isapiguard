@@ -125,6 +125,7 @@ public:
 					if (!mr[i].matched)
 						continue;
 
+					log(in_text, mr[i].str(), inet_ntoa(((sockaddr_in*)context->GetRequest()->GetRemoteAddress())->sin_addr), context);
 
 					break;
 				}
